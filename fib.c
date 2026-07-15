@@ -1,4 +1,23 @@
+#include <stdlib.h>
+#include <stdio.h>
 
+long long evenSumBrute( long long n )
+{
+    long long a = 1;
+    long long b = 1;
+    long long sum = 0;
+    
+    for (long long i = 1; i <= n; i++)
+    {
+        if (i == a)
+        {
+            if (i % 2 == 0)
+            {
+                sum = sum + i;
+            }
+
+            long long c = a + b;
+            a = b;
             b = c;
         }
     }
@@ -36,4 +55,4 @@ int main(){
 
 
      
-}
+}}
