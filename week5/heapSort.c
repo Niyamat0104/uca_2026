@@ -62,7 +62,7 @@ int main() {
     int step = 4000;
     for(int i = 0; i<8 ; i++){
         int a[size];
-        generateRandom(a,size);
+        generateDescending(a,size);
         gettimeofday(&te, NULL);
         long long start = te.tv_sec * 1000000LL + te.tv_usec;
         heapSort(a,size);
