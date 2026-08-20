@@ -26,6 +26,7 @@ int isEmpty(){
     if(top == -1) {
         return 1;
  }
+}
 
 char peek() {
     if(top == -1) {
